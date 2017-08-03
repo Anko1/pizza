@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f6d353;
+}
+
+#text{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#wrapper{
+    transition: animation-play-state 1s;
+
+    position: relative;
+
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#wrapper:hover{
+    animation-play-state: paused;
+}
+
+.pizza{
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 106px;
+    height: 106px;
+
+    transition: .15s ease-in;
+}
+
+.pizza:hover{
+    transform: scale(1.3);
+}
+
+.pizza1{
+    background: url("images/Untitled-1_01.png");
+    top: -106px;
+    left: -106px;
+}
+
+.pizza1:hover{
+    top: -120px;
+    left: -120px;
+}
+
+.pizza2{
+    background: url("images/Untitled-1_02.png");
+    top: -106px;
+    left: 0;
+}
+
+.pizza2:hover{
+    top: -120px;
+    left: 14px;
+}
+
+.pizza3{
+    background: url("images/Untitled-1_03.png");
+    top: 0;
+    left: -106px;
+}
+
+.pizza3:hover{
+    top: 14px;
+    left: -120px;
+}
+
+
+.pizza4{
+    background: url("images/Untitled-1_04.png");
+    top: 0;
+    left: 0;
+}
+
+.pizza4:hover{
+    top: 14px;
+    left: 14px;
+}
